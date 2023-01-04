@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            color: white;
+        }
+
+        body {
+            background-image: url(./Images/1112949-256ec30f.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position:relative;
+
+
+        }
+
+        nav {
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            background-color: #0a2130;
+            padding: 10px;
+            align-items: center;
+            font-size: 50px;
+
+        }
+
+        nav img {
+            font-size: 50px;
+            width: 20%;
+        }
+
+        #form {
+            color: white;
+            background-color: rgba(128, 128, 128, 0.358);
+            margin: 30px auto;
+            width: 55%;
+            /* text-align: center; */
+            font-size: large;
+            /* box-shadow: 30px 30px 30px 5px #1a1a1a; */
+            border-radius: 3px;
+            padding-left: 15%;
+
+        }
+        
+
+        input, button {
+            margin: 20px;
+            /* box-shadow: -1px 3px 1px 0px #363636; */
+            padding: 6px 15px;
+            border-radius: 3px;
+            background-color: #363636b1;
+            color: white;
+            border-style: none;
+
+        }
+        .submit{
+            background-color: rgb(183, 43, 226);
+        }
+        h1{
+            padding-top: 50px;
+            text-align: center;
+        }
+
+        span
+        {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <img src="./Images/logo-dark-bg.svg">
+    </nav>
+    <h1>Car Purchase Form</h1>
+    <form id="form">
+        <!-- <fieldset> -->
+            
+            Name :
+            <input onkeyup="Valid()" type="text" id="name" placeholder="Your Name" required> <span id = "nameErr"></span>
+            <br>
+            Email:
+            <input onkeyup="Valid()" type="text" id="email" placeholder="Your Email" required> <span id = "emailErr"></span>
+            <br>
+            Phone:
+            <input  onkeyup="Valid()" type="text" id="phone" placeholder="Your Phone" required> <span id = "phoneErr"></span>
+            <br>
+            Credit card:
+            <input  onkeyup="Valid()"type="number" id="card" placeholder="your credit card number" required> <span id = "cardErr"></span>
+            <br>
+            Address:
+            <input onkeyup="Valid()" type="text" id="country" placeholder="country - city - street" required> <span id = "countryErr"></span>
+            <br>
+            <input  type="submit" class="submit">
+
+            <input  type="reset" class="submit">
+
+        <!-- </fieldset> -->
+
+    </form>
+    </fieldset>
+
+
+    <script src="./Js/javascript.js"></script>
+
+</body>
+
+</html>

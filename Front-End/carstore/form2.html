@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UT   -8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(80, 79, 79);
+
+        }
+
+        nav {
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            background-color: #1a1a1a;
+            padding: 25px;
+            align-items: center;
+        }
+
+        nav img {
+            font-size: 50px;
+            width: 20%;
+        }
+
+        #form {
+            /* color: white; */
+            background-color: white;
+            margin: 30px auto;
+            width: 400px;
+            text-align: center;
+            font-size: large;
+            box-shadow: 30px 30px 30px 5px #1a1a1a;
+            border-radius: 15px;
+            padding-top: 15px;
+
+        }
+        fieldset
+        {
+            border-radius: 15px;
+        }
+
+        input, button {
+            margin: 20px;
+            box-shadow: -1px 3px 1px 0px #363636;
+            padding: 6px 15px;
+            border-radius: 13px;
+
+        }
+
+        button {
+            box-shadow: -1px 3px 1px 0px #363636;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <img src="./Images/logo-dark-bg.svg">
+    </nav>
+
+    <form id="form">
+        <fieldset>
+            <legend>Your information</legend>
+            name :
+            <input type="text" id="name" placeholder="Your Name" required>
+            <br>
+            email:
+            <input type="text" id="email" placeholder="Your Email" required>
+            <br>
+            phone:
+            <input type="text" id="phone" placeholder="Your Phone" required>
+            <br>
+            credit card:
+            <input type="number" id="card" placeholder="your credit card number" required>
+            <br>
+            address:
+            <input type="text" id="country" placeholder="country - city - street" required>
+            <br>
+            <input type="submit">
+            <input type="reset">
+            <!-- <button href="./form.html">Reload</button> -->
+        </fieldset>
+
+    </form>
+    </fieldset>
+
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+body {
+  background-color: #f2f2f2;
+}
+.main {
+  width: 82%;
+  margin: auto;
+}
+.div1 {
+  background-image: url(../images/sc_landing_header_web_featured_artists-8081257b.jpg);
+  height: 450px;
+  background-size: 100% 100%;
+  border-top: 7px solid #f50;
+  padding: 2px;
+}
+.div1 nav {
+  padding: 2%;
+  text-align: right;
+}
+.div1 button {
+  margin-right: 5px;
+  background-color: transparent;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.Sign {
+  border: 1px solid white;
+  padding: 7px 30px !important;
+}
+.Create {
+  background-color: #ff5500 !important;
+  border: none;
+}
+.For {
+  border: none;
+}
+.content {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  color: white;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+.content p {
+  font-size: 21px;
+  line-height: 30px;
+}
+a {
+  text-decoration: none;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+}
+.button button {
+  font-size: 3vh;
+  border: none;
+  padding: 10px 30px;
+  background-color: #ff5500;
+}
+.search {
+  padding: 50px;
+  background-color: white;
+}
+.search input {
+  font-size: 2.5vh;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border: none;
+  width: 60%;
+  border-radius: 4px;
+}
+.search button {
+  border: none;
+  padding: 10px;
+  background-color: #ff5500;
+  font-size: 2.2vh;
+  color: white;
+  border-radius: 4px;
+}
+span {
+  margin: 10px;
+}
+.trending {
+  text-align: center;
+  margin: 30px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  gap: 10px;
+}
+.photo {
+  max-width: 100%;
+}
+.testy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.testy img {
+  border-radius: 4px;
+}
+.testy::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #ff5500;
+  border-radius: 50%;
+  /* left: 50%;
+  top: 50%; */
+  display: none;
+  border-left: white solid 1px;
+}
+.testy:hover::before {
+  display: block;
+}
+.testy::after {
+  content: "";
+  position: absolute;
+  left: 47.5%;
+  /* top: 50%; */
+  display: none;
+  border-top: transparent solid 10px;
+  border-left: rgb(255, 255, 255) solid 10px;
+  border-right: transparent solid 10px;
+  border-bottom: transparent solid 10px;
+  border-radius: 2px;
+}
+.testy:hover::before,
+.testy:hover::after {
+  display: block;
+}
+
+.explore {
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 3vh !important;
+  background-color: #ff5500;
+  position: relative;
+  left: 50%;
+  margin-top: 40px;
+  transform: translateX(-50%);
+}
+.never {
+  display: flex;
+  padding-top: 70px;
+  padding-left: 70px;
+
+  font-size: 7vh;
+}
+.never-stop {
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.never-stop div::after {
+  display: block;
+  content: "";
+  width: 90px;
+  height: 3px;
+  background-image: linear-gradient(90deg, #7d01a1, #f30 50%, #f50);
+  margin: 15px 0px;
+  font-weight: 100;
+}
+.never-stop div {
+  font-weight: 100;
+  font-size: 6vh;
+}
+.never-stop p {
+  font-size: 24px;
+  width: 70%;
+}
